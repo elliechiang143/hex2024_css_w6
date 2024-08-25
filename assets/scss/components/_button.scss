@@ -1,0 +1,19 @@
+.btn{
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    &.btn-secondary-200, &.btn-secondary-200:active{
+        color: $white;
+        &:hover{
+            background-color: $accent-300;
+            border-color: $accent-300;
+        }
+    }
+    .bi{
+        transition: all .1s;
+    }
+    &:hover{
+        .bi{
+            transform: translateX(3px);
+        }
+    }
+}

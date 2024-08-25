@@ -1,0 +1,69 @@
+.hero-bg{
+  height: 621px;
+  background-image: url("/assets/images/banner.png");
+  color: $white;
+}
+
+.theme .card{
+  height: 200px;
+  border: none;
+  border-radius: 20px 0 20px 0;
+  background-position: center center;
+  &-1{
+    background-image: url("/assets/images/theme-1.png");
+  }
+  &-2{
+    background-image: url("/assets/images/theme-2.png");
+  }
+  &-3{
+    background-image: url("/assets/images/theme-3.png");
+  }
+  &-4{
+    background-image: url("/assets/images/theme-4.png");
+  }
+  &-5{
+    background-image: url("/assets/images/theme-5.png");
+  }
+  &-6{
+    background-image: url("/assets/images/theme-6.png");
+  }
+  &-7{
+    background-image: url("/assets/images/theme-7.png");
+  }
+  &-8{
+    background-image: url("/assets/images/theme-8.png");
+  }
+}
+
+// .sale .container{
+//   background-image: url("/assets/images/bg-1.png");
+//   background-repeat: no-repeat;
+//   background-position: left bottom;
+// }
+
+.sale-list li::before{
+  font-family:'Bootstrap-icons';
+  content: '\F26E';
+  font-size: 24px;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.hot{
+  .list-group-item::before{
+    content: "‧ ";
+  }
+  .list-group-item-action,
+  .list-group-item-action:hover,
+  .list-group-item-action:focus{
+    background-color: inherit;
+  }
+  .list-group-item-action:hover,
+  .list-group-item-action:focus{
+    color: $accent-200;
+  }
+  .list-group-item.active{
+    background-color: $accent-100;
+    color: $body-color;
+  }
+}
