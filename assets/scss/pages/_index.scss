@@ -4,42 +4,51 @@
   color: $white;
 }
 
-.theme .card{
-  height: 200px;
-  border: none;
+.theme-card{
   border-radius: 20px 0 20px 0;
-  background-position: center center;
-  &-1{
-    background-image: url("/assets/images/theme-1.png");
+  overflow: hidden;
+  &::after{
+    transition: all 0.15s ease-in-out;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
   }
-  &-2{
-    background-image: url("/assets/images/theme-2.png");
-  }
-  &-3{
-    background-image: url("/assets/images/theme-3.png");
-  }
-  &-4{
-    background-image: url("/assets/images/theme-4.png");
-  }
-  &-5{
-    background-image: url("/assets/images/theme-5.png");
-  }
-  &-6{
-    background-image: url("/assets/images/theme-6.png");
-  }
-  &-7{
-    background-image: url("/assets/images/theme-7.png");
-  }
-  &-8{
-    background-image: url("/assets/images/theme-8.png");
+  &:hover{
+    &::after{
+      background: rgba($gray-600,0.4);
+    }
   }
 }
 
-// .sale .container{
-//   background-image: url("/assets/images/bg-1.png");
-//   background-repeat: no-repeat;
-//   background-position: left bottom;
-// }
+.sale-bg{
+  &::before{
+    content: "";
+    position: absolute;
+    width: 217px;
+    height: 72px;
+    background-image: url("/assets/images/bg-1.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    left: 10px;
+    bottom: 0;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 186px;
+    background-image: url("/assets/images/bg-2.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    right: -30px;
+    bottom: 0;
+  }
+}
 
 .sale-list li::before{
   font-family:'Bootstrap-icons';
@@ -66,4 +75,27 @@
     background-color: $accent-100;
     color: $body-color;
   }
+}
+
+.proposal-card{
+  &::after{
+    transition: all 0.15s ease-in-out;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+  &:hover{
+    &::after{
+      background: rgba($gray-600,0.4);
+    }
+  }
+}
+
+.proposal-card-text{
+  background: linear-gradient(rgba($gray-900,0.05), $gray-900);
 }

@@ -434,7 +434,8 @@ $enable-button-pointers:      true !default;
 // $enable-rfs:                  true !default;
 $enable-rfs:                  false !default;  // week6
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+// $enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default;  // week6
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 

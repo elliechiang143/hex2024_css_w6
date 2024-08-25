@@ -1,6 +1,9 @@
-.nav-search::after{
-    content: '123';
-}
 .nav-search{
-    background-color: $primary-300;
+    input::-webkit-search-cancel-button{
+        display: none;
+    }
+}
+.form-control:focus{
+    border-color: $accent-200;
+    box-shadow: 0 0 0 0.25rem rgba($accent-200, 0.25);
 }
