@@ -1,9 +1,29 @@
 .nav-search{
+    max-width: 276px;
     input::-webkit-search-cancel-button{
         display: none;
+    }
+    @include media-breakpoint-down(lg) {
+        max-width: 100%;
     }
 }
 .form-control:focus{
     border-color: $accent-200;
     box-shadow: 0 0 0 0.25rem rgba($accent-200, 0.25);
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar{
+    button[aria-expanded="false"]{
+        .btn-close{
+            display: none;
+        }
+    }
+    button[aria-expanded="true"]{
+        .btn-hamburger{
+            display: none;
+        }
+    }
 }
