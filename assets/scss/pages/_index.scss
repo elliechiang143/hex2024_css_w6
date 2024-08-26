@@ -1,12 +1,19 @@
 .hero-bg{
   height: 621px;
-  background-image: url("/assets/images/banner.png");
   color: $white;
+  background-image: url("/assets/images/banner.png");
+  background-size: cover;
+  background-position: center center;
+  @include media-breakpoint-down(sm) {
+    height: 551px;
+    background-image: url("/assets/images/banner-sm.png");
+  }
 }
 
 .theme-card{
   border-radius: 20px 0 20px 0;
   overflow: hidden;
+  vertical-align: top;
   &::after{
     transition: all 0.15s ease-in-out;
     content: '';
@@ -22,6 +29,13 @@
     &::after{
       background: rgba($gray-600,0.4);
     }
+  }
+}
+
+.article-title{
+  transform: translateY(100%);
+  @include media-breakpoint-down(lg) {
+    transform: translateY(0);
   }
 }
 
