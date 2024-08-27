@@ -10,6 +10,16 @@
   }
 }
 
+.viewmore{
+  color: $accent-200;
+  &:hover{
+    color: $accent-300;
+  }
+  .bi::before{
+    vertical-align: middle;
+  }
+}
+
 .theme-card{
   border-radius: 20px 0 20px 0;
   overflow: hidden;
@@ -141,4 +151,13 @@
 
 .proposal-card-text{
   background: linear-gradient(rgba($gray-900,0.05), $gray-900);
+}
+
+.proposal-list{
+  @include media-breakpoint-down(sm){
+    overflow-x: scroll;
+    li{
+      width: 90%;
+    }
+  }
 }
