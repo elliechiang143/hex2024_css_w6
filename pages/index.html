@@ -214,11 +214,11 @@
     </section>
 
     <!-- 大家都在看 -->
-    <section class="hot py-11 py-sm-13 d-none">
+    <section class="hot py-11 py-sm-13">
       <div class="container">
         <h3 class="fs-2 mb-10">大家都在看</h3>
-        <div class="row">
-          <div class="col-xl-3 col-md-4">
+        <div class="row d-none d-lg-flex">
+          <div class="col-xl-3 col-lg-4">
             <div class="list-group bg-white rounded-3 fs-5 fw-bolder p-7 gap-7 shadow-sm" id="list-tab" role="tablist">
               <a class="list-group-item list-group-item-action p-5 border-0 rounded-1 active" id="list-alcohol-list" data-bs-toggle="list" href="#list-alcohol" role="tab" aria-controls="list-alcohol">酒精路跑地圖</a>
               <a class="list-group-item list-group-item-action p-5 border-0 rounded-1" id="list-ramen-list" data-bs-toggle="list" href="#list-ramen" role="tab" aria-controls="list-ramen">台北拉麵圖鑑</a>
@@ -227,7 +227,7 @@
               <a class="list-group-item list-group-item-action p-5 border-0 rounded-1" id="list-camping-list" data-bs-toggle="list" href="#list-camping" role="tab" aria-controls="list-camping">週末露營趣</a>
             </div>
           </div>
-          <div class="col-xl-9 col-md-8">
+          <div class="col-xl-9 col-lg-8">
             <div class="tab-content bg-white rounded-3 p-10" id="nav-tabContent">
               <div class="tab-pane fade show active" id="list-alcohol" role="tabpanel" aria-labelledby="list-alcohol-list">
                 <div class="p-7">
@@ -419,6 +419,143 @@
                   <a href="#" class="font-en fw-bold fs-5 viewmore">View More<i class="bi bi-arrow-right ms-4"></i></a>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="row flex-nowrap overflow-x-scroll d-lg-none">
+          <div class="col-12">
+            <div class="bg-white rounded-3 p-5 d-flex flex-column gap-5 shadow-sm">
+              <div>
+                <h4 class="fs-5 mb-4 text-secondary-200">酒精路跑地圖</h4>
+                <ol class="list-unstyled d-flex flex-column gap-2">
+                  <li>
+                    <a class="link" href="#">｜城市酒吧人氣榜,盤點當紅熱門酒吧</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#">｜你要的調酒師在這裡！五月全台酒...</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#">｜台南老宅手工酒藏,尋味百年人文釀意</a>
+                  </li>
+                </ol>
+              </div>
+              <img class="rounded-1 w-100" src="/assets/images/hots-1-sm.png" alt="alcohol">
+              <p class="d-flex gap-5 py-2">
+                <a href="#" class="badge px-2 py-1 rounded-1">#夜貓行程</a>
+                <a href="#" class="badge px-2 py-1 rounded-1">#barhopping</a>
+                <a href="#" class="badge px-2 py-1 rounded-1">#全台酒吧</a>
+              </p>
+              <p class="d-flex justify-content-center py-2">
+                <a href="#" class="font-en fw-bold fs-5 viewmore">View More<i class="bi bi-arrow-right ms-4"></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="bg-white rounded-3 p-5 d-flex flex-column gap-5 shadow-sm">
+              <div>
+                <h4 class="fs-5 mb-4 text-secondary-200">台北拉麵圖鑑</h4>
+                <ol class="list-unstyled d-flex flex-column gap-2">
+                  <li>
+                    <a class="link" href="#">｜城市拉麵名店榜，探索台北必吃拉麵</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#">｜拉麵達人的口袋名單！深度挖掘隱...</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#">｜湯頭與麵條的藝術，盤點台北獨特...</a>
+                  </li>
+                </ol>
+              </div>
+              <img class="rounded-1 w-100" src="/assets/images/hots-3-sm.png" alt="alcohol">
+              <p class="d-flex gap-5 py-2">
+                <a href="#" class="badge px-2 py-1 rounded-1">#雞白湯</a>
+                <a href="#" class="badge px-2 py-1 rounded-1">#拉麵</a>
+                <a href="#" class="badge px-2 py-1 rounded-1">#台北美食</a>
+              </p>
+              <p class="d-flex justify-content-center py-2">
+                <a href="#" class="font-en fw-bold fs-5 viewmore">View More<i class="bi bi-arrow-right ms-4"></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="bg-white rounded-3 p-5 d-flex flex-column gap-5 shadow-sm">
+              <div>
+                <h4 class="fs-5 mb-4 text-secondary-200">海島自由行</h4>
+                <ol class="list-unstyled d-flex flex-column gap-2">
+                  <li>
+                    <a class="link" href="#">｜探索熱帶天堂，海島自由行行程大...</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#">｜沙灘、陽光、與冒險，規劃你的夢...</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#">｜人氣海島度假勝地，從享受到探險...</a>
+                  </li>
+                </ol>
+              </div>
+              <img class="rounded-1 w-100" src="/assets/images/hots-4-sm.png" alt="alcohol">
+              <p class="d-flex gap-5 py-2">
+                <a href="#" class="badge px-2 py-1 rounded-1">#海島旅行</a>
+                <a href="#" class="badge px-2 py-1 rounded-1">#自由行攻略</a>
+                <a href="#" class="badge px-2 py-1 rounded-1">#熱帶天堂</a>
+              </p>
+              <p class="d-flex justify-content-center py-2">
+                <a href="#" class="font-en fw-bold fs-5 viewmore">View More<i class="bi bi-arrow-right ms-4"></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="bg-white rounded-3 p-5 d-flex flex-column gap-5 shadow-sm">
+              <div>
+                <h4 class="fs-5 mb-4 text-secondary-200">短天數出國推薦</h4>
+                <ol class="list-unstyled d-flex flex-column gap-2">
+                  <li>
+                    <a class="link" href="#">｜三天兩夜也能玩得盡興，精選短期...</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#">｜迅速充電的迷你旅程，最佳短天數...</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#">｜假期不夠長？這些地方完美適合短...</a>
+                  </li>
+                </ol>
+              </div>
+              <img class="rounded-1 w-100" src="/assets/images/hots-5-sm.png" alt="alcohol">
+              <p class="d-flex gap-5 py-2">
+                <a href="#" class="badge px-2 py-1 rounded-1">#短期旅行</a>
+                <a href="#" class="badge px-2 py-1 rounded-1">#出國推薦</a>
+                <a href="#" class="badge px-2 py-1 rounded-1">#迷你假期</a>
+              </p>
+              <p class="d-flex justify-content-center py-2">
+                <a href="#" class="font-en fw-bold fs-5 viewmore">View More<i class="bi bi-arrow-right ms-4"></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="bg-white rounded-3 p-5 d-flex flex-column gap-5 shadow-sm">
+              <div>
+                <h4 class="fs-5 mb-4 text-secondary-200">週末露營趣</h4>
+                <ol class="list-unstyled d-flex flex-column gap-2">
+                  <li>
+                    <a class="link" href="#">｜逃離都市喧囂，享受大自然的週末...</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#">｜戶外愛好者不可錯過，精選週末露...</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#">｜家庭同樂的最佳選擇，輕鬆享受週...</a>
+                  </li>
+                </ol>
+              </div>
+              <img class="rounded-1 w-100" src="/assets/images/hots-2-sm.png" alt="alcohol">
+              <p class="d-flex gap-5 py-2">
+                <a href="#" class="badge px-2 py-1 rounded-1">#露營生活</a>
+                <a href="#" class="badge px-2 py-1 rounded-1">#週末戶外</a>
+                <a href="#" class="badge px-2 py-1 rounded-1">#自然之旅</a>
+              </p>
+              <p class="d-flex justify-content-center py-2">
+                <a href="#" class="font-en fw-bold fs-5 viewmore">View More<i class="bi bi-arrow-right ms-4"></i></a>
+              </p>
             </div>
           </div>
         </div>
