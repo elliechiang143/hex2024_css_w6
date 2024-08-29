@@ -1,14 +1,14 @@
-<nav class="navbar navbar-expand-lg py-0">
+<nav class="navbar navbar-expand-lg py-0 sticky-top bg-primary-100">
     <div class="container">
       <div class="nav-border py-6 py-lg-9 w-100 d-flex justify-content-between flex-wrap">
         <a class="navbar-brand me-9 d-flex align-items-center" href="index.html">
           <img src="/assets/images/logo.svg" alt="Vivre">
         </a>
-        <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarfake" aria-controls="mainNavbarfake" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon btn-hamburger"></span>
           <span class="navbar-toggler-icon btn-close"></span>
         </button>
-        <div class="collapse navbar-collapse pt-5 pt-lg-0" id="mainNavbar">
+        <div class="collapse navbar-collapse pt-5 pt-lg-0 bg-primary-100" id="mainNavbarfake">
           <form class="d-flex mb-7 mb-lg-0 me-auto nav-search align-items-center" role="search">
             <div class="input-group position-relative">
               <input type="search" class="form-control rounded-pill bg-white ps-6 pe-11 py-4 z-1" placeholder="搜尋文章" aria-label="Search" aria-describedby="search-button">
@@ -32,4 +32,39 @@
         </div>
       </div>
     </div>
+</nav>
+<nav class="navbar navbar-expand-lg py-0 fixed-top bg-primary-100 z-5">
+  <div class="container">
+    <div class="nav-border py-6 py-lg-9 w-100 d-flex justify-content-between flex-wrap">
+      <a class="navbar-brand me-9 d-flex align-items-center" href="index.html">
+        <img src="/assets/images/logo.svg" alt="Vivre">
+      </a>
+      <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon btn-hamburger"></span>
+        <span class="navbar-toggler-icon btn-close"></span>
+      </button>
+      <div class="collapse navbar-collapse pt-5 pt-lg-0 bg-primary-100" id="mainNavbar">
+        <form class="d-flex mb-7 mb-lg-0 me-auto nav-search align-items-center" role="search">
+          <div class="input-group position-relative">
+            <input type="search" class="form-control rounded-pill bg-white ps-6 pe-11 py-4 z-1" placeholder="搜尋文章" aria-label="Search" aria-describedby="search-button">
+            <button class="btn position-absolute end-0 top-50 translate-middle-y z-2" type="button" id="search-button"><i class="d-flex align-items-center bi bi-search text-secondary-200 fs-4"></i></button>
+          </div>
+        </form>
+        <ul class="navbar-nav gap-7 gap-xl-6 gap-lg-4 me-6 align-items-stretch align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link px-6 fw-bold" href="#">所有文章</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-6 fw-bold" href="#">訂閱方案</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-6 fw-bold" href="#">關於我們</a>
+          </li>
+          <li>
+            <div class="btn btn-secondary-200 px-lg-7 py-lg-5 w-100">登入 / 註冊</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </nav>

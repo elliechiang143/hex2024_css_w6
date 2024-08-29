@@ -164,3 +164,30 @@
     }
   }
 }
+
+.hot-mobile-content{
+  &::-webkit-scrollbar{
+    display:none;
+  }
+  @include media-breakpoint-down(sm){
+    .col-12{
+      width: 90%;
+    }
+  }
+}
+
+.article-main p{
+  line-height: 1.5;
+}
+
+.additional-content-row{
+  @include media-breakpoint-down(sm){
+    overflow-x: scroll;
+    .col-12{
+      width: 90%;
+    }
+    &::-webkit-scrollbar{
+      display:none;
+    }
+  }
+}

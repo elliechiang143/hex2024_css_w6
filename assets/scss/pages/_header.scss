@@ -34,3 +34,11 @@
         border-bottom: none;
     }
 }
+
+.navbar-collapse{
+    @include media-breakpoint-down(lg){
+        ul{
+            height: 100vh;
+        }
+    }
+}
