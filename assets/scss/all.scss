@@ -8,15 +8,7 @@
 
 @import "bootstrap/scss/bootstrap";
 
-$utilities: map-merge(
-  $utilities, (
-    "font-size": map-merge(
-      map-get($utilities, "font-size"),
-      ( responsive: true ),
-    ),
-  )
-);
-
+@import "./utils/utilities";
 @import "bootstrap/scss/utilities/api";
 
 @import "./base/base";
