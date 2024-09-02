@@ -9,8 +9,8 @@ $utilities: map-merge(
 );
 $utilities: map-merge(
   $utilities, (
-    "border": map-merge(
-      map-get($utilities, "border"),
+    "border-width": map-merge(
+      map-get($utilities, "border-width"),
       ( responsive: true ),
     ),
   )
